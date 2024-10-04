@@ -1,6 +1,6 @@
 package aula03.exemplos;
 
-public class Exemplos {
+public class Exemplo {
     public static void main(String[] args) {
         double peso;
         char sexo;
@@ -12,7 +12,7 @@ public class Exemplos {
         altura = 1.8f;
         idade = 29;
 
-        System.out.println(idade);
+        System.out.println(sexo);
         idade++;
     }
 }
