@@ -1,7 +1,8 @@
 package aula03.exemplos;
 
 public class Exemplo02 {
-    public static void main(String[] args) {
+    public static void main(Exemplo08[] args) {
+        //operadores
             int total, num1=2, num2=4;
 
             total = num1 + num2;
