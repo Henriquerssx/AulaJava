@@ -1,4 +1,4 @@
-package aula03.exemplos;
+package aula02.exemplos;
 
 public class Casting {
     public static void main(Exemplo08[] args) {
@@ -7,11 +7,11 @@ public class Casting {
         int varInt = varShort;
         long varLonng = varInt;
 
-        String Aprendendo = """
+        String Aprend = """
                             Playstation
                             XBox
                             Nintendo""";
-        System.out.println(Aprendendo);
+        System.out.println(Aprend);
 
     }
 }
