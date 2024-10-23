@@ -1,6 +1,6 @@
 package aula02.exercicios;
 
-public class Exercicios10 {
+public class Exercicio10 {
     public static void main(String[] args) {
         short vShort = 2;
         int vInt = vShort;

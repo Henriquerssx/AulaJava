@@ -1,6 +1,6 @@
 package aula02.exercicios;
 
-public class Exercicios09 {
+public class Exercicio09 {
     public static void main(String[] args) {
 
      float casting = 4.6f;

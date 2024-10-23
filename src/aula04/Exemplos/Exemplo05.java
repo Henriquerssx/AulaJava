@@ -29,11 +29,5 @@ public class Exemplo05 {
             scanner.close();
 
         }
-
-
-
-
-
-
     }
 }

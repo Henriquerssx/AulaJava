@@ -1,6 +1,6 @@
 package aula02.exercicios;
 
-public class Exercicios06 {
+public class Exercicio06 {
     public static void main(String[] args) {
         var numero1 =5;
         var numero2 =23;

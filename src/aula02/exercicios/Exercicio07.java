@@ -1,6 +1,6 @@
 package aula02.exercicios;
 
-public class Exercicios07 {
+public class Exercicio07 {
     public static void main(String[] args) {
         int num1 = 4, num2 = 3, num3 = 3, num4 = 4;
         boolean cond1, cond2,cond3;

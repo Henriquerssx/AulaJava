@@ -1,6 +1,6 @@
 package aula02.exercicios;
 
-public class Exercicios03 {
+public class Exercicio03 {
     public static void main(String[] args) {
         int numero=17;
         double casting = numero;

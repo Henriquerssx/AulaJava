@@ -1,6 +1,6 @@
 package aula02.exercicios;
 
-public class Exercicios05 {
+public class Exercicio05 {
     public static void main(String[] args) {
 
     int nota1 =5, nota2 =7,nota3 =10;
