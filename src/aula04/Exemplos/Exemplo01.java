@@ -1,6 +1,6 @@
 package aula04.Exemplos;
 import java.util.Scanner;
-public class Exemplo {
+public class Exemplo01 {
     public static void main(String[] args) {
 //estrutura de decisão
         Scanner scanner = new Scanner(System.in);

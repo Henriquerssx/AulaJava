@@ -1,6 +1,6 @@
 package aula02.exemplos;
 
-public class Exemplo {
+public class Exemplo01 {
     public static void main(Exemplo08[] args) {
         //variavel
         double peso;

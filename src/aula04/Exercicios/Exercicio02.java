@@ -18,6 +18,18 @@ public class Exercicio02 {
         }
 
 
+        System.out.println("Digite o valor da compra ");
+        float valorCompra = scanner.nextFloat();
+        float valorTotal, desc = 0.1f;
+
+        valorTotal = valorCompra > 100.0f ? valorCompra - valorCompra * desc : valorCompra;
+        System.out.println("O valor da compra é: "+ valorTotal);
+
+
+
+
+
+
     }
     }
 

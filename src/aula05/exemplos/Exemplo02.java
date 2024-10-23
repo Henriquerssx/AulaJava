@@ -1,7 +1,8 @@
-package aula04.Exemplos;
+package aula05.exemplos;
+
 import java.util.Scanner;
 
-public class Exemplo08 {
+public class Exemplo02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int idade = 0;
@@ -13,4 +14,5 @@ public class Exemplo08 {
         scanner.close();
     }
 }
+
 

@@ -1,17 +1,18 @@
 package aula04.Exemplos;
 
+
 import java.util.Scanner;
 
 public class Exemplo07 {
     public static void main(String[] args) {
-        //laço de repetição
-        Scanner scanner = new Scanner(System.in);
-        int idade = 0;
-        while (idade < 18) {
-            System.out.println("Digite sua idade");
-            idade = scanner.nextInt();
-            System.out.println("Para acessar é preciso ter alcançado a maioridade");}
-        System.out.println("Voce e maior de idade");
-        scanner.close();
+//ternario
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Digite o valor da compra ");
+        float valorCompra = scanner.nextFloat();
+        float valorTotal, desconto = 0.2f;
+
+        valorTotal = valorCompra > 100.0f ? valorCompra - valorCompra * desconto : valorCompra;
+        System.out.println("O valor da compra é: "+ valorTotal);
+
 }
 }
