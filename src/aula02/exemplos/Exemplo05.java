@@ -2,7 +2,7 @@ package aula02.exemplos;
 import java.util.Scanner;
 
 public class Exemplo05 {
-    public static void main(Exemplo08[] args) {
+    public static void main(Exemplo05[] args) {
         //scanner
         Scanner scanner = new Scanner(System.in);
 

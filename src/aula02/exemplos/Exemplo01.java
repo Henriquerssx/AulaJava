@@ -1,7 +1,7 @@
 package aula02.exemplos;
 
 public class Exemplo01 {
-    public static void main(Exemplo08[] args) {
+    public static void main(Exemplo01[] args) {
         //variavel
         double peso;
         char sexo;

@@ -2,7 +2,7 @@ package aula02.exemplos;
 
 public class Exemplo04 {
 
-    public static void main(Exemplo08[] args) {
+    public static void main(Exemplo04[] args) {
         //operadores logicos
         int num1 = 2, num2 = 4, num3 = 6, num4 = 9;
         boolean resposta;

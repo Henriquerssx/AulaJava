@@ -3,7 +3,7 @@ package aula02.exemplos;
 import java.util.Scanner;
 
 public class Exemplo06 {
-    public static void main(Exemplo08[] args) {
+    public static void main(Exemplo06[] args) {
         Scanner scanner = new Scanner(System.in);
 
             System.out.println("Digite um numero inteiro ");
