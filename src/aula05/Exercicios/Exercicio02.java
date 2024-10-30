@@ -2,6 +2,7 @@ package aula05.Exercicios;
 
 public class Exercicio02 {
     public static void main(String[] args) {
+
         int numero = 1;
         int pares = 0;
 
@@ -12,4 +13,5 @@ public class Exercicio02 {
         }
 System.out.println(pares);}
 }
+
 
