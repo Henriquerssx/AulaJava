@@ -13,5 +13,3 @@ public class Exercicio02 {
         }
 System.out.println(pares);}
 }
-
-
