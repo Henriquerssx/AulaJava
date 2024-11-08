@@ -1,11 +1,14 @@
 package aula06.Exemplos;
 public class Exemplo01 {
     public static void main(String[] args) {
-        int [] [] matriz = {
-                {1,2,3},
-                {4,5,6},
-                {7,8,9}
-        };
-        System.out.println(matriz [0][1]);
+        int[] num = new int[5];
+        num[0] = 10;
+        num[1] = 20;
+        num[2] = 30;
+        num[3] = 40;
+        num[4] = 50;
+
+        System.out.println("O numero da posição 2 é " + num[1]);
+
     }
 }
