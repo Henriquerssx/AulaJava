@@ -12,7 +12,7 @@ public class Exemplo08 {
             }
         }
 
-        String[][] matrizNomes = {{"Henrique", "Jose"}, {"Rafael", "Juan"}};
+        String[][] matrizNomes = {{"Ercilia", "Jose"}, {"Rafael", "Juan"}};
         for (String[] matrizNome : matrizNomes) {
             for (String nome : matrizNome) {
                 System.out.println(nome);
