@@ -2,7 +2,8 @@ package aula06.Exemplos;
 
 public class Exemplo08 {
     public static void main(String[] args) {
-        int[][] matrizNumeros = {{0, 1, 2}, //primeira linha
+        int[][] matrizNumeros = {
+                {0, 1, 2}, //primeira linha
                 {3, 4, 5}, //segunda linha
                 {6, 7, 8}  //terceira linha
         };
@@ -12,7 +13,7 @@ public class Exemplo08 {
             }
         }
 
-        String[][] matrizNomes = {{"Ercilia", "Jose"}, {"Rafael", "Juan"}};
+        String[][] matrizNomes = {{"Ercilia", "Jose"}, {"Rafael"}};
         for (String[] matrizNome : matrizNomes) {
             for (String nome : matrizNome) {
                 System.out.println(nome);
