@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class desafio1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Quantas pessoas voçê gostaria de cadastrar: ");
+        System.out.println("Quantas pessoas você gostaria de cadastrar: ");
         int qtdPessoas = scanner.nextInt();
         scanner.nextLine();
-        String[] cabecalho = {"ID", "Nome", "Telefone", "Email"};
+        String[] cabecalho = {"ID ", "Nome", "Telefone", "Email"};
         String[][] matrizCadastro = new String[qtdPessoas + 1][cabecalho.length];
         matrizCadastro[0] = cabecalho;
         for (int linha = 1; linha <= qtdPessoas; linha++) {
             System.out.println("Preencha os dados a seguir: ");
-            System.out.println("ID - " + linha);
+            System.out.println("ID  - " + linha);
             matrizCadastro[linha][0] = String.valueOf(linha);
             System.out.print("Nome : ");
             matrizCadastro[linha][1] = scanner.nextLine();

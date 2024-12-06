@@ -5,11 +5,12 @@ import java.util.Scanner;
 
 public class desafio2 {
 
-    static String[] cabecalho = {"ID", "Nome", "Telefone", "Email"};
-    static String[][] matrizCadastro;
+    static String[] cabecalho = {"ID ", "Nome", "Telefone", "Email"};
+    static String[][] matrizCadastro = {{"", ""}};
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        matrizCadastro[0] = cabecalho;
 
         String menu = """ 
                 ____________________________________
@@ -50,18 +51,19 @@ public class desafio2 {
     }
 
     public static void exibirUsuarios() {
-        String tabela = "";
+        StringBuilder tabela = new StringBuilder();
         for (String[] linha : matrizCadastro) {
             for (int coluna = 0; coluna < linha.length; coluna++) {
-                tabela += linha[coluna] + "\t\t";
+                int tamanhoColuna = coluna == 0 ? 5 : (coluna == 2 ? 12 : 25);
+                tabela.append(String.format("%-" + tamanhoColuna + "s | ", linha[coluna]));
             }
-            tabela += "\n";
+            tabela.append("\n");
         }
         System.out.println(tabela);
     }
 
     public static void cadastrarUsuarios() {
-        System.out.println("Quantas pessoas voçê gostaria de cadastrar: ");
+        System.out.println("Quantas pessoas você gostaria de cadastrar: ");
         int qtdPessoas = scanner.nextInt();
         scanner.nextLine();
 
@@ -81,12 +83,23 @@ public class desafio2 {
             }
 
         }
-    matrizCadastro=novaMatriz;
+        matrizCadastro = novaMatriz;
 
     }
 
     public static void atualizarUsuarios() {
-        System.out.println("atualizarUsuarios");
+        exibirUsuarios();
+
+        System.out.println("\nDigite o id do usuario que deseja atualizar");
+        int idEscolhido = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println(cabecalho[0] + idEscolhido);
+        for (int coluna = 1; coluna < cabecalho.length; coluna++) {
+            System.out.println(cabecalho[coluna] + ": ");
+            matrizCadastro[idEscolhido][coluna] = scanner.nextLine();
+        }
+        exibirUsuarios();
     }
 
     public static void deletarUsuarios() {
