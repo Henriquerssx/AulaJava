@@ -33,11 +33,7 @@ public class Exercicio03 {
                 default:
                     System.out.println("Invalido");
             }
-
-
         } while (i != 4) ;
-
-
-
+        scanner.close();
     }
 }

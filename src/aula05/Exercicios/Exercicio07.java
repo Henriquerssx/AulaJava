@@ -17,7 +17,7 @@ public class Exercicio07 {
         System.out.println("A nota informada foi "
                 + nota );
 
-
+        scanner.close();
     }
 }
 

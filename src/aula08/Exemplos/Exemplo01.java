@@ -7,7 +7,7 @@ public class Exemplo01 {
     public static void main(String[] args) {
         File arquivo = new File("src\\aula08\\Exemplos\\Arquivo.txt");
         if (arquivo.exists()) {
-            System.out.println("Ja tem");
+            System.out.println("Ja existe esse arquivo ");
         } else {
             try {
                 if (arquivo.createNewFile()) {

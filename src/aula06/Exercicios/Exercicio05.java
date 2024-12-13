@@ -23,5 +23,6 @@ public class Exercicio05 {
         } else {
             System.out.println("Não existe esse nome no vetor");
         }
+        scanner.close();
     }
 }

@@ -23,5 +23,6 @@ public class Exercicio05 {
         }
 
         System.out.println("a media foi " + media);
+        scanner.close();
     }
 }

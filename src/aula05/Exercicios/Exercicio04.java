@@ -19,6 +19,7 @@ public class Exercicio04 {
         System.out.println("primo");
          if (num <= 1) {
             System.out.println("n é primo");}
+        scanner.close();
 
     }
 }

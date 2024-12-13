@@ -12,6 +12,7 @@ public class desafio3 {
     static File arquivoBancoDeDados = new File(System.getProperty("user.home"), "bancoDeDados.txt");
 
     public static void main(String[] args) {
+
         carregarDadosDoArquivo();
         matrizCadastro[0] = cabecalho;
 
@@ -63,13 +64,9 @@ public class desafio3 {
             for (int coluna = 0; coluna < linha.length; coluna++) {
                 int tamanhoColuna = coluna == 0 ? 5 : (coluna == 2 ? 10 : 25);
                 tabela.append(String.format("%-" + tamanhoColuna + "s | ", linha[coluna]));
-
             }
-
             tabela.append("\n");
-
-        }
-
+    }
         System.out.println(tabela);
 
     }
@@ -97,8 +94,6 @@ public class desafio3 {
 
             }
         }
-
-
         matrizCadastro = novaMatriz;
         System.out.println("Usuário Cadastrado com Sucesso.");
         salvarDadosNoArquivo();
@@ -158,9 +153,7 @@ public class desafio3 {
             }
         } catch (Exception e) {
             throw new RuntimeException();
-
         }
-
     }
 
     public static void carregarDadosDoArquivo() {

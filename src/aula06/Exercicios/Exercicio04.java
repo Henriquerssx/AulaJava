@@ -21,8 +21,6 @@ public class Exercicio04 {
 
         notas = (vetor[0] + vetor[1] + vetor[2] + vetor[3] + vetor[4]) / 5;
         System.out.println("A sua média foi " + notas);
-
-
-
+        scanner.close();
     }
 }

@@ -15,6 +15,7 @@ public class Exercicio03 {
 
     static int dobrar (int parametro1, int parametro2 ){
         return parametro1 * parametro2;
+
     }
 }
 

@@ -1,33 +1,38 @@
 package aula08.Exercicios;
 
-import java.util.Scanner;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Exercicio01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         File arquivoDosAlunos = new File("src\\aula08\\Exercicios\\alunos.txt");
-
         try {
             if (arquivoDosAlunos.exists()) {
-                System.out.println("Ja tem");}
-            else {
-            if (arquivoDosAlunos.createNewFile()) {
-                System.out.println("Arquivo criado com sucesso " + arquivoDosAlunos.getName());
+                System.out.println("Já existe esse arquivo");
             } else {
-                System.out.println("Falhou ao criar o arquivo");
+                if (arquivoDosAlunos.createNewFile()) {
+                    System.out.println("Arquivo criado " + arquivoDosAlunos.getName());
+                } else {
+                    System.out.println("Falha ao criar o arquivo.");
+                }
             }
+
             FileWriter fileWriter = new FileWriter(arquivoDosAlunos);
-            System.out.println("Digite 5 nomes ");
-            for (int rep = 0; rep < 5; rep++) {
-                fileWriter.write(scanner.nextLine() );
+            System.out.println("Digite 5 nomes :");
+            String linha = "\n";
+            for (int i = 0; i < 5; i++) {
+                String nomes = scanner.nextLine();
+                fileWriter.write(nomes +linha );
             }
             fileWriter.close();
-            scanner.close();
+            System.out.println("Nomes salvos");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        scanner.close();
     }
 }
+

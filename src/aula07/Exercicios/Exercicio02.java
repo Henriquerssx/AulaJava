@@ -16,6 +16,7 @@ public class Exercicio02 {
     static int funcaoSoma (int parametro1, int parametro2 ){
         return parametro1+ parametro2;
 
+
     }
 }
 

@@ -15,9 +15,8 @@ public class Exercicio05 {
             float horasExtras = horas - 40;
             float valor = horasExtras * (valorDaHora * 1.5f);
             System.out.println(valor);
-            }else {
-            System.out.println(horas * valorDaHora );
-
+        } else {
+            System.out.println(horas * valorDaHora);
 
             scanner.close();
         }

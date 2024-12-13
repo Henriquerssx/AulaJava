@@ -14,11 +14,6 @@ public class Exercicio02 {
         num[5] = "f";
 
         System.out.println("Digite uma letra ");
-
-
-
-
-
-
+        scanner.close();
     }
 }
