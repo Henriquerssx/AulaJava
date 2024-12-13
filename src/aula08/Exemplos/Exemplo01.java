@@ -11,7 +11,7 @@ public class Exemplo01 {
         } else {
             try {
                 if (arquivo.createNewFile()) {
-                    System.out.println("Arquivo criado com sucesso" + arquivo.getName());
+                    System.out.println("Arquivo criado com sucesso " + arquivo.getName());
                 } else {
                     System.out.println("Falhou");
                 }
